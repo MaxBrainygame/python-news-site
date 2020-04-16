@@ -1,7 +1,8 @@
 from getpass import getpass
 import sys
 from webapp import create_app
-from webapp.model import User, db
+from webapp.db import db
+# from webapp.news.models import User - он импортит User вроде его надо не оттуда
 
 app = create_app()
 
